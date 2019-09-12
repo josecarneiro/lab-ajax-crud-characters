@@ -93,7 +93,7 @@ In the `api` folder, create a `db.json` file. Inside our `db.json` we will speci
 }
 ```
 
-Then run the following code in the terminal to make our API start working:
+Inside the `api` folder run the following code in the terminal to make our API start working:
 
 ```bash
 $ json-server --watch db.json --port 8000
@@ -105,11 +105,11 @@ We have our API running, so now we will construct a class `APIHandler` to deal w
 
 The functionalities of the `APIHandler` class are:
 
-- Get all the characters info from *[http://localhost:8000/characters](http://localhost:8000/characters)*
-- Get a single character info from *[http://localhost:8000/characters/:id](http://localhost:8000/characters/:id)*
-- Create a single character posting the data to *[http://localhost:8000/characters](http://localhost:8000/characters)*
-- Delete a single character through his id in *[http://localhost:8000/characters/:id](http://localhost:8000/characters/:id)*
-- Edit a single character through his id in *[http://localhost:8000/characters/:id](http://ih-crud-api.herokuapp.com/characters/:id)*
+- Get all the characters info from *[http://localhost:8000/starter-code/api/characters](http://localhost:8000/characters)*
+- Get a single character info from *[http://localhost:8000/starter-code/api/characters/:id](http://localhost:8000/characters/:id)*
+- Create a single character posting the data to *[http://localhost:8000/starter-code/api/characters](http://localhost:8000/characters)*
+- Delete a single character through his id in *[http://localhost:8000/starter-code/api/characters/:id](http://localhost:8000/characters/:id)*
+- Edit a single character through his id in *[http://localhost:8000/starter-code/api/characters/:id](http://ih-crud-api.herokuapp.com/characters/:id)*
 
 You have to create an Axios call for each of these actions. You can create as many functions as you need inside the class, but remember this class should only manage the API request and display the resulting value.
 
