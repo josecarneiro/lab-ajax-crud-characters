@@ -4,6 +4,15 @@ class APIHandler {
   }
 
   getFullList () {
+    axios.get(this.BASE_URL + '/characters')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(function () {
+      });
 
   }
 
