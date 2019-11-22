@@ -10,8 +10,9 @@ body {
   background: url("../images/minions.jpg")
 }
 
-h1, h2 {
-  color: #d8b362;
+h1,
+h2 {
+  color: blue;
 }
 
 button {
