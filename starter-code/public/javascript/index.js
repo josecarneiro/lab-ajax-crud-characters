@@ -5,24 +5,21 @@ window.addEventListener('load', () => {
 
   document.getElementById('fetch-all').addEventListener('click', function (event) {
 
-    const $listCharacters = document.getElementsByClassName('characters-container');
-    $listCharacters.innerHTML = '';
+    const $listCharacters = document.querySelector('.characters-container');
 
-    charactersAPI.getFullList()
-      .then(characters => {
-        for (let character of characters) {
+    charactersAPI.getFullList().then(characters => {
+      console.log(characters, 'thiiiiis')
+      for (let character of characters) {
 
-          $listCharacters.innerHTML += `<div class="character-info">
+        $listCharacters.innerHTML += `<div class="character-info">
           <div class="name">${character.name}</div>
           <div class="occupation">${character.occupation}</div>
           <div class="cartoon">${character.cartoon}</div>
           <div class="weapon">${character.weapon}</div>
         </div>`;
-
-          console.log('after appending', $listCharacters.innerHTML);
-
-        }
-      });
+        console.log('after appending', $listCharacters.innerHTML);
+      }
+    });
   });
 
   document.getElementById('fetch-one').addEventListener('click', function (event) {
